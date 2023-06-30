@@ -16,7 +16,7 @@ namespace Revisao
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRevisao());
+            Application.Run(new frmOutroRevisao());
         }
     }
 }
