@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 69);
+            this.label1.Location = new System.Drawing.Point(4, 51);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 19);
@@ -50,7 +50,7 @@
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(95, 69);
+            this.txtNome.Location = new System.Drawing.Point(63, 51);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(132, 23);
@@ -63,26 +63,27 @@
             this.lbxLista.ForeColor = System.Drawing.Color.White;
             this.lbxLista.FormattingEnabled = true;
             this.lbxLista.ItemHeight = 19;
-            this.lbxLista.Location = new System.Drawing.Point(264, 65);
+            this.lbxLista.Location = new System.Drawing.Point(256, 51);
             this.lbxLista.Margin = new System.Windows.Forms.Padding(4);
             this.lbxLista.Name = "lbxLista";
-            this.lbxLista.Size = new System.Drawing.Size(501, 289);
+            this.lbxLista.Size = new System.Drawing.Size(488, 213);
             this.lbxLista.TabIndex = 2;
             this.lbxLista.SelectedIndexChanged += new System.EventHandler(this.lbxLista_SelectedIndexChanged);
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Location = new System.Drawing.Point(54, 134);
+            this.btnAdicionar.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionar.Location = new System.Drawing.Point(203, 51);
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(161, 50);
+            this.btnAdicionar.Size = new System.Drawing.Size(36, 23);
             this.btnAdicionar.TabIndex = 3;
-            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.Text = "+";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(54, 214);
+            this.btnDeletar.Location = new System.Drawing.Point(47, 101);
             this.btnDeletar.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(161, 50);
@@ -92,7 +93,7 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(54, 290);
+            this.btnAtualizar.Location = new System.Drawing.Point(47, 200);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(161, 50);
@@ -115,7 +116,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(804, 380);
+            this.ClientSize = new System.Drawing.Size(804, 285);
             this.ControlBox = false;
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnAtualizar);

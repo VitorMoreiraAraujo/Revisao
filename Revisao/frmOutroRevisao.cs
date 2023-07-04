@@ -30,7 +30,7 @@ namespace Revisao
 
         private void frmOutroRevisao_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT Nome FROM Pessoa";
+            string sql = "SELECT Nome FROM Clientes";
             MySqlCommand cm = new MySqlCommand();
             cm.CommandText = sql;
             cm.CommandType = CommandType.Text;
