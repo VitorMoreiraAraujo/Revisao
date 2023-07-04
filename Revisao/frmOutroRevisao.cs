@@ -61,14 +61,12 @@ namespace Revisao
             }
         }
         #endregion
-        private void lbxLista_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
 
-        private void frmOutroRevisao_Load(object sender, EventArgs e)
+        #region Método pesquisar
+
+        private void pesquisa(string sql)
         {
-            string sql = "SELECT Nome FROM Clientes";
             MySqlCommand cm = new MySqlCommand();
             cm.CommandText = sql;
             cm.CommandType = CommandType.Text;
@@ -77,7 +75,7 @@ namespace Revisao
             try
             {
                 dr = cm.ExecuteReader();
-                while(dr.Read())
+                while (dr.Read())
                 {
                     lbxLista.Items.Add(dr["Nome"].ToString());
                 }
@@ -89,12 +87,24 @@ namespace Revisao
 
                 MessageBox.Show(ex.Message);
             }
-            finally 
+            finally
             {
 
                 Conecta.fechaConexao();
 
             }
+        }
+
+        #endregion
+        private void lbxLista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmOutroRevisao_Load(object sender, EventArgs e)
+        {
+            string sql = "SELECT Nome FROM Clientes";
+            pesquisa(sql);
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
@@ -105,7 +115,9 @@ namespace Revisao
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-
+            lbxLista.Items.Clear();
+            string pesquisar = "SELECT Nome FROM Clientes";
+            pesquisa(pesquisar);
         }
     }
 }
