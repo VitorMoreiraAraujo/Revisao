@@ -32,9 +32,10 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lbxLista = new System.Windows.Forms.ListBox();
             this.btnAdicionar = new System.Windows.Forms.Button();
-            this.btnDeletar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -72,33 +73,23 @@
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.Location = new System.Drawing.Point(203, 51);
+            this.btnAdicionar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionar.Location = new System.Drawing.Point(203, 45);
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(36, 23);
+            this.btnAdicionar.Size = new System.Drawing.Size(36, 34);
             this.btnAdicionar.TabIndex = 3;
             this.btnAdicionar.Text = "+";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             // 
-            // btnDeletar
-            // 
-            this.btnDeletar.Location = new System.Drawing.Point(47, 101);
-            this.btnDeletar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(161, 50);
-            this.btnDeletar.TabIndex = 4;
-            this.btnDeletar.Text = "Deletar";
-            this.btnDeletar.UseVisualStyleBackColor = true;
-            // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(47, 200);
+            this.btnAtualizar.Location = new System.Drawing.Point(47, 156);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(161, 50);
             this.btnAtualizar.TabIndex = 5;
-            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.Text = "Mudar nome";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             // 
             // btnSair
@@ -111,6 +102,28 @@
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(47, 214);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(161, 50);
+            this.btnRefresh.TabIndex = 7;
+            this.btnRefresh.Text = "Atualizar Lista";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnDeletar
+            // 
+            this.btnDeletar.Location = new System.Drawing.Point(47, 98);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(161, 50);
+            this.btnDeletar.TabIndex = 4;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
             // frmOutroRevisao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -118,6 +131,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(804, 285);
             this.ControlBox = false;
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnDeletar);
@@ -141,8 +155,9 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.ListBox lbxLista;
         private System.Windows.Forms.Button btnAdicionar;
-        private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }
