@@ -33,16 +33,16 @@ namespace Revisao
             cm.Connection = Conecta.abreConexao();
             try
             {
-                if (MessageBox.Show("Deseja realmente fazer está ação ?", MessageBoxIcon.Warning.ToString(), MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Deseja realmente fazer está ação ?", "ATENÇÃO!!!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     int resu = cm.ExecuteNonQuery();
                     if (resu > 0)
                     {
-                        MessageBox.Show("Ação efetuada com sucesso");
+                        MessageBox.Show("Ação efetuada com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Erro ao efetuar certa ação");
+                        MessageBox.Show("Erro ao efetuar certa ação", "Falha", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     cm.Dispose();
                 }
@@ -118,6 +118,19 @@ namespace Revisao
             lbxLista.Items.Clear();
             string pesquisar = "SELECT Nome FROM Clientes";
             pesquisa(pesquisar);
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            string atualizar = String.Format("UPDATE Clientes SET Nome = '{0}' WHERE Nome = '{1}'", txtNome.Text,lbxLista.SelectedItem);
+            modifica(atualizar);
+            txtNome.Text = null;
+        }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+            string adicionar = String.Format("INSERT INTO Clientes(Nome) VALUES ('{0}')", txtNome.Text);
+            modifica(adicionar);
         }
     }
 }
