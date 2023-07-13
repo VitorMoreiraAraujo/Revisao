@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 25);
+            this.label1.Location = new System.Drawing.Point(21, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 19);
@@ -50,7 +50,7 @@
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(72, 25);
+            this.txtNome.Location = new System.Drawing.Point(80, 13);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(132, 23);
@@ -63,7 +63,7 @@
             this.lbxLista.ForeColor = System.Drawing.Color.White;
             this.lbxLista.FormattingEnabled = true;
             this.lbxLista.ItemHeight = 19;
-            this.lbxLista.Location = new System.Drawing.Point(265, 25);
+            this.lbxLista.Location = new System.Drawing.Point(273, 13);
             this.lbxLista.Margin = new System.Windows.Forms.Padding(4);
             this.lbxLista.Name = "lbxLista";
             this.lbxLista.Size = new System.Drawing.Size(488, 175);
@@ -73,7 +73,7 @@
             // btnAdicionar
             // 
             this.btnAdicionar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionar.Location = new System.Drawing.Point(212, 19);
+            this.btnAdicionar.Location = new System.Drawing.Point(220, 7);
             this.btnAdicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(36, 34);
@@ -84,7 +84,7 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(56, 150);
+            this.btnAtualizar.Location = new System.Drawing.Point(64, 138);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(161, 50);
@@ -96,7 +96,7 @@
             // btnSair
             // 
             this.btnSair.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSair.Location = new System.Drawing.Point(777, 12);
+            this.btnSair.Location = new System.Drawing.Point(777, 1);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(33, 30);
             this.btnSair.TabIndex = 6;
@@ -106,7 +106,7 @@
             // 
             // btnDeletar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(56, 72);
+            this.btnDeletar.Location = new System.Drawing.Point(64, 60);
             this.btnDeletar.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(161, 50);
@@ -121,7 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnSair;
-            this.ClientSize = new System.Drawing.Size(822, 224);
+            this.ClientSize = new System.Drawing.Size(822, 211);
             this.ControlBox = false;
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnAtualizar);
