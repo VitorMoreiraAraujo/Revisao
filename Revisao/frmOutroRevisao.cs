@@ -96,6 +96,19 @@ namespace Revisao
         }
 
         #endregion
+
+        #region Método para atualizar
+
+        private void atualizar()
+        {
+            lbxLista.Items.Clear();
+            string pesquisar = "SELECT Nome FROM Clientes";
+            pesquisa(pesquisar);
+            txtNome.Text = null;
+        }
+
+
+        #endregion
         private void lbxLista_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -111,26 +124,23 @@ namespace Revisao
         {
             string excluir = String.Format("DELETE FROM Clientes WHERE Nome = '{0}'", lbxLista.SelectedItem);
             modifica(excluir);
+            atualizar();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            lbxLista.Items.Clear();
-            string pesquisar = "SELECT Nome FROM Clientes";
-            pesquisa(pesquisar);
-        }
+        
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            string atualizar = String.Format("UPDATE Clientes SET Nome = '{0}' WHERE Nome = '{1}'", txtNome.Text,lbxLista.SelectedItem);
-            modifica(atualizar);
-            txtNome.Text = null;
+            string atualizarr = String.Format("UPDATE Clientes SET Nome = '{0}' WHERE Nome = '{1}'", txtNome.Text,lbxLista.SelectedItem);
+            modifica(atualizarr);
+            atualizar();
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             string adicionar = String.Format("INSERT INTO Clientes(Nome) VALUES ('{0}')", txtNome.Text);
             modifica(adicionar);
+            atualizar();
         }
     }
 }

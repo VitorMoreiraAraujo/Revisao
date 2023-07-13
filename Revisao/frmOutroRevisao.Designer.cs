@@ -34,7 +34,6 @@
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -67,7 +66,7 @@
             this.lbxLista.Location = new System.Drawing.Point(265, 25);
             this.lbxLista.Margin = new System.Windows.Forms.Padding(4);
             this.lbxLista.Name = "lbxLista";
-            this.lbxLista.Size = new System.Drawing.Size(488, 213);
+            this.lbxLista.Size = new System.Drawing.Size(488, 175);
             this.lbxLista.TabIndex = 2;
             this.lbxLista.SelectedIndexChanged += new System.EventHandler(this.lbxLista_SelectedIndexChanged);
             // 
@@ -85,7 +84,7 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(56, 130);
+            this.btnAtualizar.Location = new System.Drawing.Point(56, 150);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(161, 50);
@@ -96,6 +95,7 @@
             // 
             // btnSair
             // 
+            this.btnSair.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSair.Location = new System.Drawing.Point(777, 12);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(33, 30);
@@ -103,17 +103,6 @@
             this.btnSair.Text = "X";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(56, 188);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(161, 50);
-            this.btnRefresh.TabIndex = 7;
-            this.btnRefresh.Text = "Atualizar Lista";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnDeletar
             // 
@@ -132,9 +121,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnSair;
-            this.ClientSize = new System.Drawing.Size(822, 264);
+            this.ClientSize = new System.Drawing.Size(822, 224);
             this.ControlBox = false;
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnDeletar);
@@ -161,7 +149,6 @@
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnDeletar;
     }
 }
