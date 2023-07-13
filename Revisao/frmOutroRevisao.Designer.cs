@@ -58,9 +58,9 @@
             // 
             // lbxLista
             // 
-            this.lbxLista.BackColor = System.Drawing.Color.LightSalmon;
+            this.lbxLista.BackColor = System.Drawing.Color.Snow;
             this.lbxLista.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbxLista.ForeColor = System.Drawing.Color.White;
+            this.lbxLista.ForeColor = System.Drawing.Color.Black;
             this.lbxLista.FormattingEnabled = true;
             this.lbxLista.ItemHeight = 19;
             this.lbxLista.Location = new System.Drawing.Point(273, 13);
