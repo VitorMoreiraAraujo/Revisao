@@ -111,7 +111,7 @@ namespace Revisao
         #endregion
         private void lbxLista_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            txtNome.Text = lbxLista.SelectedItem.ToString();
         }
 
         private void frmOutroRevisao_Load(object sender, EventArgs e)
